@@ -1,6 +1,11 @@
 # 百度地图定位Cordova插件，支持Android，IOS，ionic 1x 2x 均可使用
 
 ### UPDATE:
+* v4.0.3 修改Android
+```
+    mOption.setLocationMode(LocationMode.Device_Sensors);//可选，默认高精度，设置定位模式，高精度，低功耗，仅设备
+    mOption.setScanSpan(1000);//可选，默认0，即仅定位一次，设置发起定位请求的间隔需要大于等于1000ms才是有效的
+```
 * v4.0.2 修复Android Studio项目或新版本Cordova找不到so文件的问题
 * v4.0.1 优化了ionic3x的兼容性，升级对应百度定位依赖库（v7.5@Android）
 * v3.2.0 升级对应百度定位依赖库（v7.2@Android,v3.3.4@IOS）
@@ -34,7 +39,7 @@ __Android 版原作者[mrwutong](https://github.com/mrwutong)的话__
 [iOS SDK开发密钥](http://lbsyun.baidu.com/index.php?title=iossdk/guide/key)
 
 >每一个Bundle Identifier 对应一个AK，不可混用
-  
+
 #### 二，安装插件
 
 ```shell
@@ -62,13 +67,13 @@ baidumap_location.getCurrentPosition(function (result) {
     "latitude": 34.6666666,//纬度
     "longitude": 117.8888,//经度
     "radius": 61.9999999,//半径
- 
+
     //--------Android 独享 begin
     "locType": 161,//定位类型                                            
     "locTypeDescription": "NetWork location successful!",//定位类型解释   
     "userIndoorState": 1,//是否室内                                     
     //--------Android 独享 end
-    
+
     //--------IOS 独享 begin
     "title": "我的位置",//定位标注点标题信息
     "subtitle": "我的位置",//定位标注点子标题信息
@@ -87,7 +92,7 @@ baidumap_location.getCurrentPosition(function (result) {
 具体字段内容请参照：
 >[Android版 BDLocation v7.2](http://wiki.lbsyun.baidu.com/cms/androidloc/doc/v7.2/index.html)
 
->[IOS版 BMKUserLocation v3.3.4](http://wiki.lbsyun.baidu.com/cms/iossdk/doc/v3_3_4/html/interface_b_m_k_user_location.html#aba4b76e55f4605c5554fe16aca1b4fbf) 
+>[IOS版 BMKUserLocation v3.3.4](http://wiki.lbsyun.baidu.com/cms/iossdk/doc/v3_3_4/html/interface_b_m_k_user_location.html#aba4b76e55f4605c5554fe16aca1b4fbf)
 
 如果Android版获取到的信息是：
 
