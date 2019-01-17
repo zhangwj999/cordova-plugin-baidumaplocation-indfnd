@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-baidumaplocation-indfnd",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "description": "Cordova Geolocation Plugin,use Baidu Map SDK",
   "cordova": {
     "id": "cordova-plugin-baidumaplocation-indfnd",
@@ -31,7 +31,7 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/aruis/cordova-plugin-baidumaplocation/issues"
+    "url": "https://github.com/aruis/cordova-plugin-baidumaplocation-indfnd/issues"
   },
-  "homepage": "https://github.com/aruis/cordova-plugin-baidumaplocation#readme"
+  "homepage": "https://github.com/aruis/cordova-plugin-baidumaplocation-indfnd#readme"
 }
